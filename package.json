@@ -1,6 +1,6 @@
 {
   "name": "@moralesl/billing-alert",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Utility CDK construct to setup billing alerts easily",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -53,9 +53,6 @@
     "aws",
     "cdk"
   ],
-  "publishConfig": {
-      "registry": "https://npm.pkg.github.com/"
-  },
   "license": "MIT",
   "peerDependencies": {
     "@aws-cdk/core": "1.32.2",
