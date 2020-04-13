@@ -1,4 +1,4 @@
-## CDK Billing Alert util
+## CDK Billing Alert utility
 
 ---
 
