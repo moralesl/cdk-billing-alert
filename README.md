@@ -31,3 +31,22 @@ new BillingAlert(this, "BillingAlertTenDollars", {
     ]
 });
 ```
+
+### Python
+
+First you need to install the package
+
+```
+pip install moralesl.billing-alert
+```
+
+Then you can use the billing alert utility in your code:
+
+```python
+import moralesl.billing_alert as billing_alert
+
+billing_alert.BillingAlert(self, "BillingAlertTenDollars",
+    amount=10,
+    emails=["test@example.com"]
+)
+```
