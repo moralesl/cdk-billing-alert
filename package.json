@@ -53,6 +53,9 @@
     "aws",
     "cdk"
   ],
+  "publishConfig": {
+      "registry": "https://npm.pkg.github.com/"
+  },
   "license": "MIT",
   "peerDependencies": {
     "@aws-cdk/core": "1.32.2",
