@@ -1,0 +1,61 @@
+{
+  "name": "@moralesl/billing-alert",
+  "version": "0.1.0",
+  "description": "Utility CDK construct to setup billing alerts easily",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "build": "jsii",
+    "build:watch": "jsii -w",
+    "package": "jsii-pacmak",
+    "watch": "tsc -w",
+    "test": "jest",
+    "test:watch": "jest -w"
+  },
+  "prepublish": "tsc",
+  "devDependencies": {
+    "@aws-cdk/assert": "^1.32.2",
+    "@aws-cdk/aws-cloudwatch": "1.32.2",
+    "@aws-cdk/aws-cloudwatch-actions": "1.32.2",
+    "@aws-cdk/aws-sns": "1.32.2",
+    "@aws-cdk/aws-sns-subscriptions": "1.32.2",
+    "@aws-cdk/core": "1.32.2",
+    "@types/jest": "^24.9.1",
+    "@types/node": "10.17.5",
+    "jest": "^24.9.0",
+    "jsii": "^1.2.0",
+    "jsii-pacmak": "^1.2.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "~3.7.2"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js"
+    ]
+  },
+  "jsii": {
+    "outdir": "dist",
+    "targets": {
+      "python": {
+        "distName": "moralesl.billing-alert",
+        "module": "moralesl.billing_alert"
+      }
+    }
+  },
+  "author": {
+    "name": "Luis Morales",
+    "url": "https://github.com/moralesl"
+  },
+  "repository": {
+    "url": "https://github.com/moralesl/cdk-billing-alert.git"
+  },
+  "keywords": [
+    "aws",
+    "cdk"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "@aws-cdk/core": "1.32.2",
+    "constructs": "^2.0.0"
+  }
+}

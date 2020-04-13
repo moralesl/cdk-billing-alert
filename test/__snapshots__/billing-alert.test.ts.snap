@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BillingAlert matches snapshot 1`] = `
+Object {
+  "Resources": Object {
+    "BillingAlarm100Dollars0B7E2D29": Object {
+      "Properties": Object {
+        "AlarmActions": Array [
+          Object {
+            "Ref": "BillingAlert100DollarsTopic5FE6B983",
+          },
+        ],
+        "AlarmDescription": "Account Billing Alert for $100",
+        "AlarmName": "Billing Alert - Estimated Bill Exceeds $100",
+        "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+        "Dimensions": Array [
+          Object {
+            "Name": "Currency",
+            "Value": "USD",
+          },
+        ],
+        "EvaluationPeriods": 1,
+        "MetricName": "EstimatedCharges",
+        "Namespace": "AWS/Billing",
+        "Period": 21600,
+        "Statistic": "Maximum",
+        "Threshold": 100,
+      },
+      "Type": "AWS::CloudWatch::Alarm",
+    },
+    "BillingAlert100DollarsTopic5FE6B983": Object {
+      "Properties": Object {
+        "TopicName": "Billing-Alert-100Dollars",
+      },
+      "Type": "AWS::SNS::Topic",
+    },
+    "BillingAlert100DollarsTopictestexamplecom7976F141": Object {
+      "Properties": Object {
+        "Endpoint": "test@example.com",
+        "Protocol": "email",
+        "TopicArn": Object {
+          "Ref": "BillingAlert100DollarsTopic5FE6B983",
+        },
+      },
+      "Type": "AWS::SNS::Subscription",
+    },
+  },
+}
+`;
