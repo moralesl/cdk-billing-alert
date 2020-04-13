@@ -2,8 +2,8 @@
 
 ---
 
-[![Build Status](https://travis-ci.org/liyasthomas/banner.svg?branch=master)](https://travis-ci.org/liyasthomas/banner)
-[![GitHub release](https://img.shields.io/github/release/liyasthomas/banner/all.svg)](https://github.com/liyasthomas/banner/releases/latest)
+[![Build Status](https://travis-ci.com/moralesl/cdk-billing-alert.svg?branch=master)](https://travis-ci.com/moralesl/cdk-billing-alert)
+[![GitHub release](https://img.shields.io/github/release/moralesl/cdk-billing-alert/all.svg)](https://img.shields.io/github/release/moralesl/cdk-billing-alert/all.svg)
 
 ---
 
