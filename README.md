@@ -10,9 +10,16 @@
 Utility CDK construct to setup billing alerts easily
 
 
-## Example
+## Usage
+### Typescript
 
-The following example shows how to set up a billing alert:
+First you need to install the package
+
+```
+npm install @moralesl/billing-alert
+```
+
+Then you can use the billing alert utility in your code:
 
 ```ts
 import { BillingAlert } from "@moralesl/billing-alert";
