@@ -15,7 +15,7 @@ Utility CDK construct to setup billing alerts easily
 The following example shows how to set up a billing alert:
 
 ```ts
-import { BillingAlert } from "@moralesl/billing_alert";
+import { BillingAlert } from "@moralesl/billing-alert";
 
 new BillingAlert(this, "BillingAlertTenDollars", {
     amount: 10,
