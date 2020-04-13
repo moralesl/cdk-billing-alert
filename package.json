@@ -1,6 +1,6 @@
 {
   "name": "@moralesl/billing-alert",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Utility CDK construct to setup billing alerts easily",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -56,6 +56,10 @@
   "license": "MIT",
   "peerDependencies": {
     "@aws-cdk/core": "1.32.2",
+    "@aws-cdk/aws-cloudwatch": "1.32.2",
+    "@aws-cdk/aws-cloudwatch-actions": "1.32.2",
+    "@aws-cdk/aws-sns": "1.32.2",
+    "@aws-cdk/aws-sns-subscriptions": "1.32.2",
     "constructs": "^2.0.0"
   }
 }
