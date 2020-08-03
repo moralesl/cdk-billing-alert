@@ -1,6 +1,6 @@
 {
   "name": "@moralesl/billing-alert",
-  "version": "0.4.0",
+  "version": "0.5.0-SNAPSHOT",
   "description": "Utility CDK construct to setup billing alerts easily",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -14,12 +14,12 @@
   },
   "prepublish": "tsc",
   "devDependencies": {
-    "@aws-cdk/assert": "^1.32.2",
-    "@aws-cdk/aws-cloudwatch": "1.32.2",
-    "@aws-cdk/aws-cloudwatch-actions": "1.32.2",
-    "@aws-cdk/aws-sns": "1.32.2",
-    "@aws-cdk/aws-sns-subscriptions": "1.32.2",
-    "@aws-cdk/core": "1.32.2",
+    "@aws-cdk/assert": "^1.56.0",
+    "@aws-cdk/aws-cloudwatch": "1.56.0",
+    "@aws-cdk/aws-cloudwatch-actions": "1.56.0",
+    "@aws-cdk/aws-sns": "1.56.0",
+    "@aws-cdk/aws-sns-subscriptions": "1.56.0",
+    "@aws-cdk/core": "1.56.0",
     "@types/jest": "^24.9.1",
     "@types/node": "10.17.5",
     "jest": "^24.9.0",
@@ -55,11 +55,11 @@
   ],
   "license": "MIT",
   "peerDependencies": {
-    "@aws-cdk/core": "1.32.2",
-    "@aws-cdk/aws-cloudwatch": "1.32.2",
-    "@aws-cdk/aws-cloudwatch-actions": "1.32.2",
-    "@aws-cdk/aws-sns": "1.32.2",
-    "@aws-cdk/aws-sns-subscriptions": "1.32.2",
+    "@aws-cdk/core": "1.56.0",
+    "@aws-cdk/aws-cloudwatch": "1.56.0",
+    "@aws-cdk/aws-cloudwatch-actions": "1.56.0",
+    "@aws-cdk/aws-sns": "1.56.0",
+    "@aws-cdk/aws-sns-subscriptions": "1.56.0",
     "constructs": "^2.0.0"
   }
 }
