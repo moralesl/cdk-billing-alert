@@ -1,6 +1,6 @@
 {
   "name": "@moralesl/billing-alert",
-  "version": "0.5.0-SNAPSHOT",
+  "version": "0.5.0",
   "description": "Utility CDK construct to setup billing alerts easily",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
