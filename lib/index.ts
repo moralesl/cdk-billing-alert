@@ -1,11 +1,12 @@
-import { Construct } from "@aws-cdk/core";
-import * as cloudwatch from "@aws-cdk/aws-cloudwatch";
-import * as cloudwatch_actions from "@aws-cdk/aws-cloudwatch-actions";
-import * as sns from "@aws-cdk/aws-sns";
-import * as subs from "@aws-cdk/aws-sns-subscriptions";
-
-import { Duration } from "@aws-cdk/core";
-import { ComparisonOperator } from "@aws-cdk/aws-cloudwatch";
+import { Construct } from "constructs";
+import { Duration } from "aws-cdk-lib";
+import { 
+  aws_cloudwatch as cloudwatch,
+  aws_sns as sns,
+  aws_sns_subscriptions as subs,
+  aws_cloudwatch_actions as cloudwatch_actions
+} from "aws-cdk-lib";
+import { ComparisonOperator } from "aws-cdk-lib/aws-cloudwatch";
 
 export interface BillingAlertProps {
   /**

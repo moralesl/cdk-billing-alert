@@ -1,6 +1,5 @@
-import { SynthUtils } from '@aws-cdk/assert';
-import '@aws-cdk/assert/jest';
-import { Stack } from '@aws-cdk/core';
+import { Stack } from 'aws-cdk-lib';
+import { Template } from 'aws-cdk-lib/assertions';
 import { BillingAlert } from '../lib/index';
 
 
@@ -11,7 +10,7 @@ test('BillingAlert matches snapshot', () => {
     emails: ["test@example.com"]
   });
 
-  expect(SynthUtils.toCloudFormation(stack)).toMatchSnapshot();
+  expect(Template.fromStack(stack).toJSON()).toMatchSnapshot();
 });
 
 test('BillingAlert has mail subscription', () => {
@@ -22,7 +21,8 @@ test('BillingAlert has mail subscription', () => {
     emails: ["test@example.com"]
   });
 
-  expect(stack).toHaveResource('AWS::SNS::Subscription', {
+  const template = Template.fromStack(stack);
+  template.hasResourceProperties('AWS::SNS::Subscription', {
     Endpoint: 'test@example.com'
   });
 });
@@ -35,7 +35,8 @@ test('BillingAlert has amount as threshold', () => {
     emails: ["test@example.com"]
   });
 
-  expect(stack).toHaveResource('AWS::CloudWatch::Alarm', {
+  const template = Template.fromStack(stack);
+  template.hasResourceProperties('AWS::CloudWatch::Alarm', {
     Threshold: 42
   });
 });
